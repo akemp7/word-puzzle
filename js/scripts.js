@@ -12,13 +12,13 @@ $(document).ready(function() {
       letter = sentenceInput[i];
     }
     buildPuzzle += letter;
-    console.log(buildPuzzle);
   }
-
   $("#output").text(buildPuzzle);
+  $("#sentence").hide();
 
   });
   $("#clear").click(function() {
+    $("#sentence").show();
     $("#input").trigger("reset");
     $("#output").text("");
   });
