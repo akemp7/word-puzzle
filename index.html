@@ -13,9 +13,23 @@
       <form id="input">
         <label for="sentence">Enter a sentence:</label>
         <textarea class="form-control rounded-0" id="sentence" rows="10"></textarea>
-        <button type="submit" class="btn btn-info">Submit</button>
+        <div class="row">
+          <div class="col-sm-3 offset-sm-3">
+            <button type="submit" class="btn btn-info">Submit</button>
+          </div>
+          <div class="col-sm-3">
+            <button class="btn btn-info" id="clear">Clear Form</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 offset-sm-3">
+            <button class="btn btn-info" id="hint">Give Me A Hint</button>
+          </div>
+          <div class="col-sm-3">
+            <button class="btn btn-info" id="forfeit">I Give Up!</button>
+          </div>
+        </div>
       </form>
-      <button class="btn btn-info" id="clear">Clear Form</button>
       <div id="output">
       </div>
     </div>
