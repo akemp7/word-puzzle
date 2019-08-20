@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $("#input").submit(function(event) {
   event.preventDefault();
-
   var userSentence = $("#sentence").val();
   var sentenceInput = userSentence.toLowerCase();
   var buildPuzzle = "";
@@ -17,6 +16,13 @@ $(document).ready(function() {
   $("#output").text(buildPuzzle);
   $("#sentence").hide();
 
+    // $("#hint").click(function() {
+    //
+    // });
+    $("#forfeit").click(function() {
+      $("#user-sentence").text(userSentence);
+      $("#answer").show();
+    });
   });
   $("#clear").click(function() {
     $("#sentence").show();
