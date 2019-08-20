@@ -2,11 +2,12 @@ $(document).ready(function() {
   $("#input").submit(function(event) {
   event.preventDefault();
 
-  var sentenceInput = $("#sentence").val();
+  var userSentence = $("#sentence").val();
+  var sentenceInput = userSentence.toLowerCase();
   var buildPuzzle = "";
   for (var i = 0; i < sentenceInput.length; i++) {
     var letter = "";
-    if (sentenceInput[i] === "a") {
+    if (sentenceInput[i] === "a" || sentenceInput[i] === "e" || sentenceInput[i] === "i" || sentenceInput[i] === "o" || sentenceInput[i] === "u") {
       letter = "-";
     } else {
       letter = sentenceInput[i];
